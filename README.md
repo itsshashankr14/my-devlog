@@ -18,7 +18,7 @@ Welcome to my 8-week AI roadmap! This repository is dedicated to tracking my pro
 ### Week 1–2: Python Fundamentals
 - [x] Variables, Data Types, Loops, Functions  
 - [x] Lists, Dictionaries, Sets, Tuples  
-- [x] OOP in Python  
+- [] OOP in Python  
 - [ ] CLI To-Do App
 
 ### Week 3: MySQL + Python Integration
