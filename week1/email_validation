@@ -1,0 +1,22 @@
+import re
+import email.utils
+
+# Function to validate email based on the given rules
+def is_valid_email(email_address):
+    # Regex pattern based on the problem statement
+    pattern = r'^[a-zA-Z][\w\.\-]*@[a-zA-Z]+\.[a-zA-Z]{2,3}$'
+    return re.match(pattern, email_address) is not None
+
+# Read number of email entries
+n = int(input())
+
+# Loop through all input lines
+for _ in range(n):
+    full_entry = input()  # Example: "DEXTER <dexter@hotmail.com>"
+    
+    # Parse name and email using email.utils
+    name, address = email.utils.parseaddr(full_entry)
+    
+    # If valid, print in the original format
+    if is_valid_email(address):
+        print(email.utils.formataddr((name, address)))
