@@ -1,3 +1,7 @@
+# Given an array arr[]. Rotate the array to the left (counter-clockwise direction) by d steps,
+# where d is a positive integer. Perform this operation in-place (no extra array).
+# The array is to be considered circular.
+
 def left_rotate(arr, d):
     n = len(arr)
     d %= n
