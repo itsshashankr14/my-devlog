@@ -9,7 +9,7 @@ def left_rotate(arr, d):
 
     reverse(0, d - 1)
     reverse(d, n - 1)
-    reverse(n, n - 1)
+    reverse(0, n - 1)
 
 if __name__ == "__main__":
     arr = [1, 2, 3, 4, 5, 6, 7]
